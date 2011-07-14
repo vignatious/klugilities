@@ -1,5 +1,5 @@
 #!/bin/sh 
 
-if [ -z "*$" ] ; then echo "duks files-or-dirs - finds sorted disk usage"; exit 99 ; fi
+if [ -z "$1" ] ; then echo "duks files-or-dirs - finds sorted disk usage"; exit 99 ; fi
 
 du -ks $* | sort -nr 
